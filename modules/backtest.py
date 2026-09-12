@@ -82,6 +82,7 @@ def calculate_hrp_weights_for_window(
 
 def run_rolling_hrp_backtest(
     sector_returns: pd.DataFrame,
+    portfolio_returns_data: pd.DataFrame | None = None,
     window: int = 100,
     rebalance_every: int = 20
 ) -> tuple:
@@ -92,7 +93,13 @@ def run_rolling_hrp_backtest(
     Parameters
     ----------
     sector_returns:
-        Daily sector log returns.
+        Daily equal-weight sector returns used for DCC-GARCH and HRP risk
+        estimation.
+
+    portfolio_returns_data:
+        Optional daily sector returns to which the resulting HRP weights are
+        applied.  Passing NN-generated sector returns here keeps risk
+        estimation independent from the Stage-3 stock-selection layer.
 
     window:
         Number of historical trading days used
@@ -132,11 +139,32 @@ def run_rolling_hrp_backtest(
             "rebalance_every must be >= 1."
         )
 
-    # Remove missing observations
-    sector_returns = (
-        sector_returns
-        .dropna()
-    )
+    # Remove missing observations and keep both streams date/column aligned.
+    sector_returns = sector_returns.dropna().copy()
+
+    if portfolio_returns_data is None:
+        portfolio_returns_data = sector_returns.copy()
+    else:
+        required_sectors = list(sector_returns.columns)
+        missing_sectors = set(required_sectors) - set(portfolio_returns_data.columns)
+
+        if missing_sectors:
+            raise ValueError(
+                "portfolio_returns_data is missing sectors: "
+                f"{sorted(missing_sectors)}"
+            )
+
+        common_dates = sector_returns.index.intersection(
+            portfolio_returns_data.index
+        )
+
+        sector_returns = sector_returns.loc[common_dates]
+        portfolio_returns_data = (
+            portfolio_returns_data
+            .loc[common_dates, required_sectors]
+            .dropna()
+        )
+        sector_returns = sector_returns.loc[portfolio_returns_data.index]
 
     sectors = list(
         sector_returns.columns
@@ -290,9 +318,7 @@ def run_rolling_hrp_backtest(
         # Apply current weights to today's return
         # -----------------------------------------------------
 
-        today_returns = (
-            sector_returns.iloc[i].values
-        )
+        today_returns = portfolio_returns_data.iloc[i].values
 
         portfolio_return = float(
             np.dot(

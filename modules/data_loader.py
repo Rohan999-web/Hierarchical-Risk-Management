@@ -57,7 +57,8 @@ def load_universe_mapping(filepath: str) -> dict:
 def download_yahoo_data(
     tickers: list,
     years: int = 5,
-    cache_dir: str = "yf_cache"
+    cache_dir: str = "yf_cache",
+    refresh_short_cache: bool = True
 ) -> pd.DataFrame:
     """
     Download historical daily closing prices from Yahoo Finance.
@@ -96,13 +97,38 @@ def download_yahoo_data(
                     parse_dates=True
                 ).iloc[:, 0]
 
-                series.name = ticker
-                df_list.append(series)
+                series = series.dropna()
 
-                continue
+                # Check whether cached data covers the requested period
+                cached_start = series.index.min()
+
+                # Yahoo only returns trading days.  A request starting on a
+                # weekend or market holiday can legitimately begin a few
+                # calendar days later, so allow that small market-calendar
+                # gap before deciding the cache is incomplete.
+                required_start = pd.Timestamp(start_date)
+                first_acceptable_date = required_start + pd.Timedelta(days=7)
+
+                if cached_start <= first_acceptable_date:
+                    series.name = ticker
+                    df_list.append(series)
+                    continue
+
+                if not refresh_short_cache:
+                    series.name = ticker
+                    df_list.append(series)
+                    continue
+
+                print(
+                    f"  Cache for {ticker} is too short. "
+                    "Re-downloading..."
+                )
 
             except Exception:
-                print(f"  Corrupted cache for {ticker}. Re-downloading...")
+                print(
+                    f"  Corrupted cache for {ticker}. "
+                    "Re-downloading..."
+                )
 
         # -------------------------------------------------
         # 2. Download from Yahoo Finance

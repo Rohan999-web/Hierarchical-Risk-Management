@@ -9,16 +9,34 @@ def train_nn(
     features,
     returns,
     epochs=100,
-    learning_rate=0.001
+    learning_rate=0.001,
+    model=None,
+    previous_weights=None,
+    temperature=0.5,
+    verbose=True
 ):
     """
     Train the intra-sector neural network.
     """
 
-    model = IntraSectorNN(
-        num_stocks=15,
-        num_features=2
-    )
+    if returns.ndim != 2:
+        raise ValueError("returns must be a 2-dimensional tensor.")
+
+    num_stocks = returns.shape[1]
+    expected_features = num_stocks * 2
+
+    if features.shape[-1] != expected_features:
+        raise ValueError(
+            f"Expected {expected_features} features for {num_stocks} stocks, "
+            f"got {features.shape[-1]}."
+        )
+
+    if model is None:
+        model = IntraSectorNN(
+            num_stocks=num_stocks,
+            num_features=2,
+            temperature=temperature
+        )
 
     optimizer = optim.Adam(
         model.parameters(),
@@ -40,7 +58,8 @@ def train_nn(
         # Calculate objective
         loss = calculate_loss(
             portfolio_returns,
-            weights.squeeze(0)
+            weights.squeeze(0),
+            previous_weights=previous_weights
         )
 
         # Backpropagation
@@ -50,7 +69,7 @@ def train_nn(
 
         loss_history.append(loss.item())
 
-        if (epoch + 1) % 10 == 0:
+        if verbose and (epoch + 1) % 10 == 0:
             print(
                 f"Epoch {epoch + 1}/{epochs} "
                 f"| Loss: {loss.item():.6f}"

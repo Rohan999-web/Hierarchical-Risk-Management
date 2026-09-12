@@ -73,3 +73,5 @@ def compute_sector_returns(
     sector_simple_returns = pd.DataFrame(sector_simple).dropna()
 
     return sector_log_returns, sector_simple_returns
+
+

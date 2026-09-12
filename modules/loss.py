@@ -64,3 +64,4 @@ def calculate_loss(
     )
 
     return loss
+

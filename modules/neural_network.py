@@ -3,25 +3,40 @@ import torch.nn as nn
 
 
 class IntraSectorNN(nn.Module):
-    def __init__(self, num_stocks=15, num_features=2):
+
+    def __init__(
+        self,
+        num_stocks=15,
+        num_features=2,
+        temperature=0.5
+    ):
         super().__init__()
 
         input_size = num_stocks * num_features
 
-        self.network = nn.Sequential(
-            nn.Linear(input_size, 64),
-            nn.SiLU(),
+        self.layer1 = nn.Linear(input_size, 64)
+        self.layer2 = nn.Linear(64, 64)
+        self.layer3 = nn.Linear(64, num_stocks)
 
-            nn.Linear(64, 64),
-            nn.SiLU(),
+        self.activation = nn.SiLU()
 
-            nn.Linear(64, num_stocks)
-        )
+        self.temperature = temperature
+        self.softmax = nn.Softmax(dim=1)
 
     def forward(self, x):
-        logits = self.network(x)
 
-        # Convert outputs into portfolio weights
-        weights = torch.softmax(logits, dim=-1)
+        x = self.activation(
+            self.layer1(x)
+        )
+
+        x = self.activation(
+            self.layer2(x)
+        )
+
+        logits = self.layer3(x)
+
+        weights = self.softmax(
+            logits / self.temperature
+        )
 
         return weights

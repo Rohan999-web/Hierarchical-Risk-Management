@@ -1,0 +1,594 @@
+
+Initiating data fetch for 30 stocks...
+Caching files in './yf_cache'
+
+
+Consolidating stock data...
+Cleaned out 6 stocks due to incomplete history.
+Final Active Universe: 24 stocks × 3600 trading days.
+
+Initiating data fetch for 30 stocks...
+Caching files in './yf_cache'
+
+
+Consolidating stock data...
+Cleaned out 12 stocks due to incomplete history.
+Final Active Universe: 18 stocks × 3600 trading days.
+
+Initiating data fetch for 30 stocks...
+Caching files in './yf_cache'
+
+
+Consolidating stock data...
+Cleaned out 4 stocks due to incomplete history.
+Final Active Universe: 26 stocks × 3600 trading days.
+
+Initiating data fetch for 30 stocks...
+Caching files in './yf_cache'
+
+
+Consolidating stock data...
+Cleaned out 8 stocks due to incomplete history.
+Final Active Universe: 22 stocks × 3600 trading days.
+
+Initiating data fetch for 30 stocks...
+Caching files in './yf_cache'
+
+
+Consolidating stock data...
+Cleaned out 8 stocks due to incomplete history.
+Final Active Universe: 22 stocks × 3600 trading days.
+
+Initiating data fetch for 30 stocks...
+Caching files in './yf_cache'
+
+
+Consolidating stock data...
+Cleaned out 5 stocks due to incomplete history.
+Final Active Universe: 25 stocks × 3600 trading days.
+
+Starting rolling HRP backtest...
+Historical window: 100 days
+Rebalance frequency: every 20 days
+Out-of-sample days: 979
+Expected HRP calculations: ~49
+
+Rebalancing on 2022-09-30 00:00:00
+
+Fitting GARCH(1,1) models...
+Auto: alpha=0.1182, beta=0.5732, alpha+beta=0.6915
+Banking: alpha=0.0000, beta=0.8503, alpha+beta=0.8503
+Energy: alpha=0.3303, beta=0.6284, alpha+beta=0.9587
+FMCG: alpha=0.0818, beta=0.8759, alpha+beta=0.9577
+IT: alpha=0.0762, beta=0.9188, alpha+beta=0.9950
+Pharma: alpha=0.3154, beta=0.5217, alpha+beta=0.8371
+HRP Weights: Auto=10.44%, Banking=17.60%, Energy=4.11%, FMCG=36.21%, IT=13.64%, Pharma=18.00%
+
+Rebalancing on 2022-11-01 00:00:00
+
+Fitting GARCH(1,1) models...
+Auto: alpha=0.0824, beta=0.6301, alpha+beta=0.7125
+Banking: alpha=0.1242, beta=0.4827, alpha+beta=0.6069
+Energy: alpha=0.2395, beta=0.6879, alpha+beta=0.9273
+FMCG: alpha=0.0450, beta=0.8385, alpha+beta=0.8835
+IT: alpha=0.1387, beta=0.6661, alpha+beta=0.8048
+Pharma: alpha=0.1501, beta=0.5895, alpha+beta=0.7396
+HRP Weights: Auto=10.36%, Banking=8.17%, Energy=22.11%, FMCG=20.14%, IT=14.25%, Pharma=24.97%
+
+Rebalancing on 2022-11-30 00:00:00
+
+Fitting GARCH(1,1) models...
+Auto: alpha=0.0973, beta=0.7123, alpha+beta=0.8096
+Banking: alpha=0.1635, beta=0.5431, alpha+beta=0.7066
+Energy: alpha=0.0892, beta=0.7522, alpha+beta=0.8414
+FMCG: alpha=0.0219, beta=0.8559, alpha+beta=0.8778
+IT: alpha=0.0047, beta=0.8660, alpha+beta=0.8707
+Pharma: alpha=0.0570, beta=0.7655, alpha+beta=0.8226
+HRP Weights: Auto=9.33%, Banking=12.59%, Energy=7.56%, FMCG=37.54%, IT=11.63%, Pharma=21.34%
+
+Rebalancing on 2022-12-28 00:00:00
+
+Fitting GARCH(1,1) models...
+Auto: alpha=0.3412, beta=0.4903, alpha+beta=0.8315
+Banking: alpha=0.3086, beta=0.5651, alpha+beta=0.8737
+Energy: alpha=0.1609, beta=0.7465, alpha+beta=0.9074
+FMCG: alpha=0.1315, beta=0.7270, alpha+beta=0.8585
+IT: alpha=0.0922, beta=0.2097, alpha+beta=0.3019
+Pharma: alpha=0.0613, beta=0.7725, alpha+beta=0.8339
+HRP Weights: Auto=1.78%, Banking=0.38%, Energy=2.48%, FMCG=15.92%, IT=14.96%, Pharma=64.48%
+
+Rebalancing on 2023-01-25 00:00:00
+
+Fitting GARCH(1,1) models...
+Auto: alpha=0.5873, beta=0.1118, alpha+beta=0.6991
+Banking: alpha=0.3381, beta=0.3475, alpha+beta=0.6856
+Energy: alpha=0.2426, beta=0.3631, alpha+beta=0.6057
+FMCG: alpha=0.1637, beta=0.6524, alpha+beta=0.8161
+IT: alpha=0.1352, beta=0.3991, alpha+beta=0.5343
+Pharma: alpha=0.1188, beta=0.7466, alpha+beta=0.8654
+HRP Weights: Auto=18.94%, Banking=3.50%, Energy=13.27%, FMCG=32.91%, IT=16.37%, Pharma=15.01%
+
+Rebalancing on 2023-02-23 00:00:00
+
+Fitting GARCH(1,1) models...
+Auto: alpha=0.4202, beta=0.3136, alpha+beta=0.7338
+Banking: alpha=0.4204, beta=0.2992, alpha+beta=0.7196
+Energy: alpha=0.2221, beta=0.5022, alpha+beta=0.7243
+FMCG: alpha=0.2460, beta=0.3920, alpha+beta=0.6380
+IT: alpha=0.1337, beta=0.0000, alpha+beta=0.1337
+Pharma: alpha=0.1584, beta=0.0000, alpha+beta=0.1584
+HRP Weights: Auto=25.48%, Banking=3.32%, Energy=7.75%, FMCG=27.36%, IT=9.03%, Pharma=27.05%
+
+Rebalancing on 2023-03-24 00:00:00
+
+Fitting GARCH(1,1) models...
+Auto: alpha=0.3027, beta=0.3794, alpha+beta=0.6821
+Banking: alpha=0.3651, beta=0.3086, alpha+beta=0.6736
+Energy: alpha=0.2297, beta=0.3857, alpha+beta=0.6154
+FMCG: alpha=0.2063, beta=0.4395, alpha+beta=0.6458
+IT: alpha=0.0000, beta=0.9921, alpha+beta=0.9921
+Pharma: alpha=0.0000, beta=0.9405, alpha+beta=0.9405
+HRP Weights: Auto=10.51%, Banking=6.19%, Energy=9.58%, FMCG=38.89%, IT=6.55%, Pharma=28.28%
+
+Rebalancing on 2023-04-27 00:00:00
+
+Fitting GARCH(1,1) models...
+Auto: alpha=0.2851, beta=0.4935, alpha+beta=0.7787
+Banking: alpha=0.3176, beta=0.3012, alpha+beta=0.6188
+Energy: alpha=0.2630, beta=0.4210, alpha+beta=0.6840
+FMCG: alpha=0.2410, beta=0.3950, alpha+beta=0.6360
+IT: alpha=0.0000, beta=0.9931, alpha+beta=0.9931
+Pharma: alpha=0.1032, beta=0.5780, alpha+beta=0.6812
+HRP Weights: Auto=42.51%, Banking=4.13%, Energy=5.49%, FMCG=21.90%, IT=9.97%, Pharma=16.00%
+
+Rebalancing on 2023-05-26 00:00:00
+
+Fitting GARCH(1,1) models...
+Auto: alpha=0.1064, beta=0.7356, alpha+beta=0.8420
+Banking: alpha=0.1492, beta=0.3569, alpha+beta=0.5062
+Energy: alpha=0.2603, beta=0.5735, alpha+beta=0.8338
+FMCG: alpha=0.0000, beta=0.8967, alpha+beta=0.8967
+IT: alpha=0.0000, beta=0.9925, alpha+beta=0.9925
+Pharma: alpha=0.1495, beta=0.4438, alpha+beta=0.5933
+HRP Weights: Auto=16.58%, Banking=8.55%, Energy=14.17%, FMCG=20.55%, IT=12.40%, Pharma=27.75%
+
+Rebalancing on 2023-06-23 00:00:00
+
+Fitting GARCH(1,1) models...
+Auto: alpha=0.1361, beta=0.7578, alpha+beta=0.8939
+Banking: alpha=0.1376, beta=0.8574, alpha+beta=0.9950
+Energy: alpha=0.2241, beta=0.5838, alpha+beta=0.8079
+FMCG: alpha=0.0000, beta=0.9936, alpha+beta=0.9936
+IT: alpha=0.0000, beta=0.9912, alpha+beta=0.9912
+Pharma: alpha=0.0000, beta=0.9608, alpha+beta=0.9608
+HRP Weights: Auto=17.85%, Banking=19.46%, Energy=11.72%, FMCG=23.19%, IT=6.47%, Pharma=21.32%
+
+Rebalancing on 2023-07-24 00:00:00
+
+Fitting GARCH(1,1) models...
+Auto: alpha=0.1850, beta=0.7058, alpha+beta=0.8908
+Banking: alpha=0.1179, beta=0.8667, alpha+beta=0.9846
+Energy: alpha=0.1331, beta=0.7023, alpha+beta=0.8355
+FMCG: alpha=0.0494, beta=0.2608, alpha+beta=0.3102
+IT: alpha=0.0000, beta=0.9944, alpha+beta=0.9944
+Pharma: alpha=0.0796, beta=0.3989, alpha+beta=0.4785
+HRP Weights: Auto=12.36%, Banking=5.73%, Energy=12.72%, FMCG=45.28%, IT=5.90%, Pharma=18.01%
+
+Rebalancing on 2023-08-22 00:00:00
+
+Fitting GARCH(1,1) models...
+Auto: alpha=0.0854, beta=0.8292, alpha+beta=0.9146
+Banking: alpha=0.0000, beta=0.9516, alpha+beta=0.9516
+Energy: alpha=0.4420, beta=0.2793, alpha+beta=0.7213
+FMCG: alpha=0.0951, beta=0.3352, alpha+beta=0.4303
+IT: alpha=0.0000, beta=0.9939, alpha+beta=0.9939
+Pharma: alpha=0.0332, beta=0.9055, alpha+beta=0.9387
+HRP Weights: Auto=17.34%, Banking=15.79%, Energy=10.10%, FMCG=37.72%, IT=7.67%, Pharma=11.38%
+
+Rebalancing on 2023-09-20 00:00:00
+
+Fitting GARCH(1,1) models...
+Auto: alpha=0.0000, beta=0.9914, alpha+beta=0.9914
+Banking: alpha=0.1069, beta=0.8086, alpha+beta=0.9156
+Energy: alpha=0.5623, beta=0.0000, alpha+beta=0.5623
+FMCG: alpha=0.0000, beta=0.9521, alpha+beta=0.9521
+IT: alpha=0.0000, beta=0.9948, alpha+beta=0.9948
+Pharma: alpha=0.0337, beta=0.8420, alpha+beta=0.8757
+HRP Weights: Auto=13.18%, Banking=7.15%, Energy=15.69%, FMCG=37.21%, IT=9.10%, Pharma=17.66%
+
+Rebalancing on 2023-10-19 00:00:00
+
+Fitting GARCH(1,1) models...
+Auto: alpha=0.0000, beta=0.9950, alpha+beta=0.9950
+Banking: alpha=0.1333, beta=0.0000, alpha+beta=0.1333
+Energy: alpha=0.3904, beta=0.0000, alpha+beta=0.3904
+FMCG: alpha=0.0000, beta=0.9635, alpha+beta=0.9635
+IT: alpha=0.0000, beta=0.9934, alpha+beta=0.9934
+Pharma: alpha=0.0260, beta=0.8416, alpha+beta=0.8675
+HRP Weights: Auto=11.97%, Banking=13.80%, Energy=5.14%, FMCG=34.21%, IT=16.92%, Pharma=17.96%
+
+Rebalancing on 2023-11-20 00:00:00
+
+Fitting GARCH(1,1) models...
+Auto: alpha=0.0000, beta=0.9950, alpha+beta=0.9950
+Banking: alpha=0.1018, beta=0.0000, alpha+beta=0.1018
+Energy: alpha=0.4810, beta=0.0000, alpha+beta=0.4810
+FMCG: alpha=0.0026, beta=0.8940, alpha+beta=0.8965
+IT: alpha=0.0001, beta=0.3090, alpha+beta=0.3091
+Pharma: alpha=0.3750, beta=0.0000, alpha+beta=0.3750
+HRP Weights: Auto=17.13%, Banking=9.88%, Energy=12.69%, FMCG=24.63%, IT=22.25%, Pharma=13.42%
+
+Rebalancing on 2023-12-19 00:00:00
+
+Fitting GARCH(1,1) models...
+Auto: alpha=0.0101, beta=0.3895, alpha+beta=0.3996
+Banking: alpha=0.0521, beta=0.4695, alpha+beta=0.5216
+Energy: alpha=0.4036, beta=0.0000, alpha+beta=0.4036
+FMCG: alpha=0.0257, beta=0.8250, alpha+beta=0.8508
+IT: alpha=0.2776, beta=0.0000, alpha+beta=0.2776
+Pharma: alpha=0.3827, beta=0.0000, alpha+beta=0.3827
+HRP Weights: Auto=19.91%, Banking=7.06%, Energy=9.80%, FMCG=40.29%, IT=4.32%, Pharma=18.62%
+
+Rebalancing on 2024-01-17 00:00:00
+
+Fitting GARCH(1,1) models...
+Auto: alpha=0.0000, beta=0.9950, alpha+beta=0.9950
+Banking: alpha=0.0445, beta=0.0000, alpha+beta=0.0445
+Energy: alpha=0.3409, beta=0.0000, alpha+beta=0.3409
+FMCG: alpha=0.0000, beta=0.9933, alpha+beta=0.9933
+IT: alpha=0.2132, beta=0.0000, alpha+beta=0.2132
+Pharma: alpha=0.1423, beta=0.0000, alpha+beta=0.1423
+HRP Weights: Auto=31.24%, Banking=5.67%, Energy=7.03%, FMCG=34.94%, IT=7.27%, Pharma=13.84%
+
+Rebalancing on 2024-02-16 00:00:00
+
+Fitting GARCH(1,1) models...
+Auto: alpha=0.0000, beta=0.9937, alpha+beta=0.9937
+Banking: alpha=0.0000, beta=0.9945, alpha+beta=0.9945
+Energy: alpha=0.5440, beta=0.0187, alpha+beta=0.5626
+FMCG: alpha=0.1600, beta=0.0000, alpha+beta=0.1600
+IT: alpha=0.1174, beta=0.0000, alpha+beta=0.1174
+Pharma: alpha=0.1056, beta=0.0000, alpha+beta=0.1056
+HRP Weights: Auto=15.05%, Banking=6.08%, Energy=5.45%, FMCG=27.45%, IT=18.67%, Pharma=27.30%
+
+Rebalancing on 2024-03-18 00:00:00
+
+Fitting GARCH(1,1) models...
+Auto: alpha=0.2598, beta=0.1262, alpha+beta=0.3860
+Banking: alpha=0.0000, beta=0.9910, alpha+beta=0.9910
+Energy: alpha=0.6786, beta=0.0358, alpha+beta=0.7144
+FMCG: alpha=0.2623, beta=0.4750, alpha+beta=0.7373
+IT: alpha=0.1243, beta=0.0000, alpha+beta=0.1243
+Pharma: alpha=0.1472, beta=0.0000, alpha+beta=0.1472
+HRP Weights: Auto=10.36%, Banking=19.83%, Energy=3.57%, FMCG=23.73%, IT=19.15%, Pharma=23.36%
+
+Rebalancing on 2024-04-19 00:00:00
+
+Fitting GARCH(1,1) models...
+Auto: alpha=0.2710, beta=0.0529, alpha+beta=0.3239
+Banking: alpha=0.0000, beta=0.9938, alpha+beta=0.9938
+Energy: alpha=0.6821, beta=0.0260, alpha+beta=0.7081
+FMCG: alpha=0.2347, beta=0.4819, alpha+beta=0.7167
+IT: alpha=0.0768, beta=0.0000, alpha+beta=0.0768
+Pharma: alpha=0.0950, beta=0.0000, alpha+beta=0.0951
+HRP Weights: Auto=17.44%, Banking=8.30%, Energy=10.93%, FMCG=43.20%, IT=10.38%, Pharma=9.76%
+
+Rebalancing on 2024-05-21 00:00:00
+
+Fitting GARCH(1,1) models...
+Auto: alpha=0.2338, beta=0.0812, alpha+beta=0.3150
+Banking: alpha=0.0000, beta=0.9892, alpha+beta=0.9892
+Energy: alpha=0.8707, beta=0.1150, alpha+beta=0.9857
+FMCG: alpha=0.2958, beta=0.3644, alpha+beta=0.6603
+IT: alpha=0.0000, beta=0.8567, alpha+beta=0.8567
+Pharma: alpha=0.0782, beta=0.4264, alpha+beta=0.5046
+HRP Weights: Auto=26.68%, Banking=6.92%, Energy=9.35%, FMCG=28.41%, IT=14.20%, Pharma=14.44%
+
+Rebalancing on 2024-06-19 00:00:00
+
+Fitting GARCH(1,1) models...
+Auto: alpha=0.6268, beta=0.0000, alpha+beta=0.6268
+Banking: alpha=0.5840, beta=0.0000, alpha+beta=0.5840
+Energy: alpha=0.7775, beta=0.0542, alpha+beta=0.8317
+FMCG: alpha=0.0820, beta=0.3682, alpha+beta=0.4502
+IT: alpha=0.1552, beta=0.4321, alpha+beta=0.5874
+Pharma: alpha=0.1497, beta=0.4287, alpha+beta=0.5783
+HRP Weights: Auto=17.20%, Banking=10.15%, Energy=10.38%, FMCG=30.58%, IT=14.53%, Pharma=17.16%
+
+Rebalancing on 2024-07-18 00:00:00
+
+Fitting GARCH(1,1) models...
+Auto: alpha=0.6668, beta=0.0000, alpha+beta=0.6668
+Banking: alpha=0.5712, beta=0.0000, alpha+beta=0.5712
+Energy: alpha=0.7372, beta=0.1643, alpha+beta=0.9015
+FMCG: alpha=0.0825, beta=0.4285, alpha+beta=0.5109
+IT: alpha=0.1307, beta=0.3895, alpha+beta=0.5201
+Pharma: alpha=0.2553, beta=0.3994, alpha+beta=0.6548
+HRP Weights: Auto=31.19%, Banking=2.08%, Energy=4.05%, FMCG=17.56%, IT=21.16%, Pharma=23.96%
+
+Rebalancing on 2024-08-16 00:00:00
+
+Fitting GARCH(1,1) models...
+Auto: alpha=0.7016, beta=0.0305, alpha+beta=0.7321
+Banking: alpha=0.6079, beta=0.0000, alpha+beta=0.6079
+Energy: alpha=0.6391, beta=0.1610, alpha+beta=0.8002
+FMCG: alpha=0.0285, beta=0.5060, alpha+beta=0.5345
+IT: alpha=0.1264, beta=0.0000, alpha+beta=0.1264
+Pharma: alpha=0.1669, beta=0.3188, alpha+beta=0.4858
+HRP Weights: Auto=22.50%, Banking=15.64%, Energy=10.78%, FMCG=18.74%, IT=19.70%, Pharma=12.65%
+
+Rebalancing on 2024-09-13 00:00:00
+
+Fitting GARCH(1,1) models...
+Auto: alpha=0.6700, beta=0.0465, alpha+beta=0.7165
+Banking: alpha=0.6172, beta=0.0000, alpha+beta=0.6172
+Energy: alpha=0.5990, beta=0.2328, alpha+beta=0.8319
+FMCG: alpha=0.0356, beta=0.5298, alpha+beta=0.5653
+IT: alpha=0.1696, beta=0.0000, alpha+beta=0.1696
+Pharma: alpha=0.1722, beta=0.3407, alpha+beta=0.5128
+HRP Weights: Auto=27.12%, Banking=4.84%, Energy=3.19%, FMCG=23.78%, IT=14.42%, Pharma=26.66%
+
+Rebalancing on 2024-10-14 00:00:00
+
+Fitting GARCH(1,1) models...
+Auto: alpha=0.6141, beta=0.0541, alpha+beta=0.6682
+Banking: alpha=0.7117, beta=0.0000, alpha+beta=0.7117
+Energy: alpha=0.6008, beta=0.2691, alpha+beta=0.8700
+FMCG: alpha=0.0632, beta=0.4800, alpha+beta=0.5433
+IT: alpha=0.1576, beta=0.0000, alpha+beta=0.1576
+Pharma: alpha=0.2186, beta=0.0000, alpha+beta=0.2186
+HRP Weights: Auto=18.76%, Banking=16.06%, Energy=16.81%, FMCG=17.07%, IT=20.51%, Pharma=10.79%
+
+Rebalancing on 2024-11-11 00:00:00
+
+Fitting GARCH(1,1) models...
+Auto: alpha=0.1455, beta=0.2388, alpha+beta=0.3843
+Banking: alpha=0.0000, beta=0.9777, alpha+beta=0.9777
+Energy: alpha=0.1708, beta=0.5147, alpha+beta=0.6855
+FMCG: alpha=0.0516, beta=0.8893, alpha+beta=0.9409
+IT: alpha=0.0000, beta=0.9600, alpha+beta=0.9600
+Pharma: alpha=0.1942, beta=0.0001, alpha+beta=0.1943
+HRP Weights: Auto=11.40%, Banking=25.56%, Energy=11.69%, FMCG=16.36%, IT=21.36%, Pharma=13.63%
+
+Rebalancing on 2024-12-11 00:00:00
+
+Fitting GARCH(1,1) models...
+Auto: alpha=0.1694, beta=0.2209, alpha+beta=0.3903
+Banking: alpha=0.0000, beta=0.9945, alpha+beta=0.9945
+Energy: alpha=0.0797, beta=0.4849, alpha+beta=0.5646
+FMCG: alpha=0.0695, beta=0.8590, alpha+beta=0.9285
+IT: alpha=0.1825, beta=0.0000, alpha+beta=0.1825
+Pharma: alpha=0.1107, beta=0.4312, alpha+beta=0.5419
+HRP Weights: Auto=16.99%, Banking=7.23%, Energy=6.47%, FMCG=28.52%, IT=21.76%, Pharma=19.02%
+
+Rebalancing on 2025-01-09 00:00:00
+
+Fitting GARCH(1,1) models...
+Auto: alpha=0.0404, beta=0.8577, alpha+beta=0.8981
+Banking: alpha=0.0000, beta=0.9937, alpha+beta=0.9937
+Energy: alpha=0.1303, beta=0.5129, alpha+beta=0.6432
+FMCG: alpha=0.0599, beta=0.8079, alpha+beta=0.8678
+IT: alpha=0.1752, beta=0.0000, alpha+beta=0.1752
+Pharma: alpha=0.1070, beta=0.4559, alpha+beta=0.5629
+HRP Weights: Auto=17.32%, Banking=14.94%, Energy=12.68%, FMCG=28.96%, IT=15.21%, Pharma=10.90%
+
+Rebalancing on 2025-02-05 00:00:00
+
+Fitting GARCH(1,1) models...
+Auto: alpha=0.1413, beta=0.0000, alpha+beta=0.1413
+Banking: alpha=0.3202, beta=0.0142, alpha+beta=0.3344
+Energy: alpha=0.1840, beta=0.5803, alpha+beta=0.7643
+FMCG: alpha=0.0669, beta=0.7601, alpha+beta=0.8271
+IT: alpha=0.1077, beta=0.3808, alpha+beta=0.4885
+Pharma: alpha=0.3310, beta=0.0000, alpha+beta=0.3310
+HRP Weights: Auto=11.00%, Banking=17.95%, Energy=5.10%, FMCG=32.83%, IT=16.38%, Pharma=16.74%
+
+Rebalancing on 2025-03-06 00:00:00
+
+Fitting GARCH(1,1) models...
+Auto: alpha=0.0000, beta=0.9640, alpha+beta=0.9640
+Banking: alpha=0.2698, beta=0.0000, alpha+beta=0.2698
+Energy: alpha=0.1002, beta=0.8324, alpha+beta=0.9327
+FMCG: alpha=0.0079, beta=0.8207, alpha+beta=0.8285
+IT: alpha=0.0475, beta=0.4568, alpha+beta=0.5043
+Pharma: alpha=0.1061, beta=0.8615, alpha+beta=0.9676
+HRP Weights: Auto=24.66%, Banking=14.86%, Energy=8.34%, FMCG=20.60%, IT=21.72%, Pharma=9.81%
+
+Rebalancing on 2025-04-07 00:00:00
+
+Fitting GARCH(1,1) models...
+Auto: alpha=0.0000, beta=0.9641, alpha+beta=0.9641
+Banking: alpha=0.0000, beta=0.8293, alpha+beta=0.8293
+Energy: alpha=0.0742, beta=0.8644, alpha+beta=0.9386
+FMCG: alpha=0.0000, beta=0.9434, alpha+beta=0.9434
+IT: alpha=0.0412, beta=0.8650, alpha+beta=0.9062
+Pharma: alpha=0.0661, beta=0.9099, alpha+beta=0.9760
+HRP Weights: Auto=10.30%, Banking=22.67%, Energy=8.99%, FMCG=40.12%, IT=9.85%, Pharma=8.07%
+
+Rebalancing on 2025-05-09 00:00:00
+
+Fitting GARCH(1,1) models...
+Auto: alpha=0.0001, beta=0.4078, alpha+beta=0.4079
+Banking: alpha=0.0114, beta=0.7008, alpha+beta=0.7122
+Energy: alpha=0.0569, beta=0.0000, alpha+beta=0.0569
+FMCG: alpha=0.0552, beta=0.0000, alpha+beta=0.0552
+IT: alpha=0.0751, beta=0.7203, alpha+beta=0.7955
+Pharma: alpha=0.3580, beta=0.0000, alpha+beta=0.3580
+HRP Weights: Auto=10.79%, Banking=12.21%, Energy=9.43%, FMCG=21.67%, IT=23.47%, Pharma=22.42%
+
+Rebalancing on 2025-06-06 00:00:00
+
+Fitting GARCH(1,1) models...
+Auto: alpha=0.0000, beta=0.9900, alpha+beta=0.9900
+Banking: alpha=0.0000, beta=0.9038, alpha+beta=0.9038
+Energy: alpha=0.0085, beta=0.9506, alpha+beta=0.9591
+FMCG: alpha=0.0643, beta=0.0000, alpha+beta=0.0643
+IT: alpha=0.0243, beta=0.5518, alpha+beta=0.5761
+Pharma: alpha=0.3409, beta=0.0000, alpha+beta=0.3409
+HRP Weights: Auto=10.44%, Banking=21.10%, Energy=10.25%, FMCG=36.95%, IT=9.45%, Pharma=11.82%
+
+Rebalancing on 2025-07-04 00:00:00
+
+Fitting GARCH(1,1) models...
+Auto: alpha=0.0975, beta=0.8975, alpha+beta=0.9950
+Banking: alpha=0.0160, beta=0.9210, alpha+beta=0.9370
+Energy: alpha=0.0675, beta=0.9275, alpha+beta=0.9950
+FMCG: alpha=0.0280, beta=0.8973, alpha+beta=0.9253
+IT: alpha=0.0535, beta=0.9103, alpha+beta=0.9637
+Pharma: alpha=0.1021, beta=0.8929, alpha+beta=0.9950
+HRP Weights: Auto=31.27%, Banking=13.10%, Energy=8.87%, FMCG=22.67%, IT=7.05%, Pharma=17.04%
+
+Rebalancing on 2025-08-01 00:00:00
+
+Fitting GARCH(1,1) models...
+Auto: alpha=0.1254, beta=0.8696, alpha+beta=0.9950
+Banking: alpha=0.0722, beta=0.9228, alpha+beta=0.9950
+Energy: alpha=0.0771, beta=0.9006, alpha+beta=0.9777
+FMCG: alpha=0.0732, beta=0.8336, alpha+beta=0.9068
+IT: alpha=0.0975, beta=0.8975, alpha+beta=0.9950
+Pharma: alpha=0.1287, beta=0.8650, alpha+beta=0.9936
+HRP Weights: Auto=10.35%, Banking=18.75%, Energy=6.42%, FMCG=19.29%, IT=20.86%, Pharma=24.33%
+
+Rebalancing on 2025-09-02 00:00:00
+
+Fitting GARCH(1,1) models...
+Auto: alpha=0.1623, beta=0.8316, alpha+beta=0.9939
+Banking: alpha=0.0993, beta=0.8957, alpha+beta=0.9950
+Energy: alpha=0.2818, beta=0.6896, alpha+beta=0.9714
+FMCG: alpha=0.1621, beta=0.7439, alpha+beta=0.9059
+IT: alpha=0.1133, beta=0.8817, alpha+beta=0.9950
+Pharma: alpha=0.3264, beta=0.6472, alpha+beta=0.9736
+HRP Weights: Auto=10.49%, Banking=17.56%, Energy=11.81%, FMCG=30.54%, IT=15.90%, Pharma=13.69%
+
+Rebalancing on 2025-09-30 00:00:00
+
+Fitting GARCH(1,1) models...
+Auto: alpha=0.1972, beta=0.7923, alpha+beta=0.9896
+Banking: alpha=0.0030, beta=0.9486, alpha+beta=0.9516
+Energy: alpha=0.5356, beta=0.4554, alpha+beta=0.9910
+FMCG: alpha=0.0000, beta=0.9949, alpha+beta=0.9949
+IT: alpha=0.7782, beta=0.2166, alpha+beta=0.9948
+Pharma: alpha=0.1384, beta=0.4830, alpha+beta=0.6214
+HRP Weights: Auto=11.11%, Banking=18.70%, Energy=12.91%, FMCG=38.76%, IT=2.75%, Pharma=15.77%
+
+Rebalancing on 2025-10-30 00:00:00
+
+Fitting GARCH(1,1) models...
+Auto: alpha=0.0575, beta=0.8873, alpha+beta=0.9448
+Banking: alpha=0.0000, beta=0.9809, alpha+beta=0.9809
+Energy: alpha=0.0335, beta=0.6368, alpha+beta=0.6703
+FMCG: alpha=0.0000, beta=0.9490, alpha+beta=0.9490
+IT: alpha=0.0996, beta=0.8174, alpha+beta=0.9170
+Pharma: alpha=0.1798, beta=0.4389, alpha+beta=0.6187
+HRP Weights: Auto=13.12%, Banking=14.60%, Energy=10.29%, FMCG=22.72%, IT=17.24%, Pharma=22.03%
+
+Rebalancing on 2025-11-28 00:00:00
+
+Fitting GARCH(1,1) models...
+Auto: alpha=0.0295, beta=0.8995, alpha+beta=0.9291
+Banking: alpha=0.0038, beta=0.9192, alpha+beta=0.9229
+Energy: alpha=0.0000, beta=0.9472, alpha+beta=0.9472
+FMCG: alpha=0.0066, beta=0.8845, alpha+beta=0.8911
+IT: alpha=0.0754, beta=0.7808, alpha+beta=0.8561
+Pharma: alpha=0.2524, beta=0.3626, alpha+beta=0.6149
+HRP Weights: Auto=15.76%, Banking=11.54%, Energy=26.05%, FMCG=23.11%, IT=16.35%, Pharma=7.18%
+
+Rebalancing on 2025-12-29 00:00:00
+
+Fitting GARCH(1,1) models...
+Auto: alpha=0.0617, beta=0.9333, alpha+beta=0.9950
+Banking: alpha=0.0000, beta=0.9771, alpha+beta=0.9771
+Energy: alpha=0.0000, beta=0.9928, alpha+beta=0.9928
+FMCG: alpha=0.0141, beta=0.9436, alpha+beta=0.9578
+IT: alpha=0.0000, beta=0.9924, alpha+beta=0.9924
+Pharma: alpha=0.1925, beta=0.4183, alpha+beta=0.6109
+HRP Weights: Auto=21.37%, Banking=11.75%, Energy=15.30%, FMCG=20.79%, IT=9.35%, Pharma=21.44%
+
+Rebalancing on 2026-01-27 00:00:00
+
+Fitting GARCH(1,1) models...
+Auto: alpha=0.0371, beta=0.9297, alpha+beta=0.9668
+Banking: alpha=0.0000, beta=0.9940, alpha+beta=0.9940
+Energy: alpha=0.0464, beta=0.9103, alpha+beta=0.9567
+FMCG: alpha=0.1174, beta=0.3110, alpha+beta=0.4284
+IT: alpha=0.0000, beta=0.9690, alpha+beta=0.9690
+Pharma: alpha=0.2626, beta=0.1344, alpha+beta=0.3970
+HRP Weights: Auto=13.35%, Banking=28.00%, Energy=11.62%, FMCG=21.07%, IT=15.31%, Pharma=10.66%
+
+Rebalancing on 2026-02-24 00:00:00
+
+Fitting GARCH(1,1) models...
+Auto: alpha=0.0583, beta=0.9101, alpha+beta=0.9684
+Banking: alpha=0.0640, beta=0.0000, alpha+beta=0.0640
+Energy: alpha=0.0879, beta=0.8627, alpha+beta=0.9506
+FMCG: alpha=0.0905, beta=0.8218, alpha+beta=0.9123
+IT: alpha=0.0687, beta=0.8777, alpha+beta=0.9464
+Pharma: alpha=0.0674, beta=0.8710, alpha+beta=0.9384
+HRP Weights: Auto=18.61%, Banking=9.90%, Energy=16.08%, FMCG=25.05%, IT=20.25%, Pharma=10.11%
+
+Rebalancing on 2026-03-25 00:00:00
+
+Fitting GARCH(1,1) models...
+Auto: alpha=0.1136, beta=0.8565, alpha+beta=0.9701
+Banking: alpha=0.1339, beta=0.8145, alpha+beta=0.9484
+Energy: alpha=0.1132, beta=0.8162, alpha+beta=0.9294
+FMCG: alpha=0.1159, beta=0.8282, alpha+beta=0.9440
+IT: alpha=0.0433, beta=0.9196, alpha+beta=0.9630
+Pharma: alpha=0.0951, beta=0.8618, alpha+beta=0.9568
+HRP Weights: Auto=13.16%, Banking=9.21%, Energy=22.96%, FMCG=18.73%, IT=21.40%, Pharma=14.54%
+
+Rebalancing on 2026-04-28 00:00:00
+
+Fitting GARCH(1,1) models...
+Auto: alpha=0.1371, beta=0.7981, alpha+beta=0.9352
+Banking: alpha=0.1598, beta=0.7778, alpha+beta=0.9375
+Energy: alpha=0.0582, beta=0.8656, alpha+beta=0.9238
+FMCG: alpha=0.1218, beta=0.8039, alpha+beta=0.9257
+IT: alpha=0.0758, beta=0.8918, alpha+beta=0.9676
+Pharma: alpha=0.1274, beta=0.7269, alpha+beta=0.8543
+HRP Weights: Auto=16.86%, Banking=23.08%, Energy=11.83%, FMCG=18.78%, IT=11.84%, Pharma=17.60%
+
+Rebalancing on 2026-05-26 00:00:00
+
+Fitting GARCH(1,1) models...
+Auto: alpha=0.1412, beta=0.7627, alpha+beta=0.9040
+Banking: alpha=0.1596, beta=0.7476, alpha+beta=0.9071
+Energy: alpha=0.0165, beta=0.8057, alpha+beta=0.8222
+FMCG: alpha=0.1254, beta=0.7437, alpha+beta=0.8691
+IT: alpha=0.0164, beta=0.8968, alpha+beta=0.9132
+Pharma: alpha=0.0765, beta=0.6914, alpha+beta=0.7679
+HRP Weights: Auto=10.90%, Banking=12.24%, Energy=10.20%, FMCG=39.12%, IT=7.67%, Pharma=19.87%
+
+Rebalancing on 2026-06-23 00:00:00
+
+Fitting GARCH(1,1) models...
+Auto: alpha=0.1496, beta=0.7523, alpha+beta=0.9019
+Banking: alpha=0.1453, beta=0.7516, alpha+beta=0.8970
+Energy: alpha=0.0315, beta=0.8760, alpha+beta=0.9075
+FMCG: alpha=0.1272, beta=0.8678, alpha+beta=0.9950
+IT: alpha=0.0000, beta=0.9935, alpha+beta=0.9935
+Pharma: alpha=0.1288, beta=0.6981, alpha+beta=0.8269
+HRP Weights: Auto=13.59%, Banking=8.10%, Energy=7.83%, FMCG=51.87%, IT=4.79%, Pharma=13.82%
+
+Rebalancing on 2026-07-21 00:00:00
+
+Fitting GARCH(1,1) models...
+Auto: alpha=0.1384, beta=0.8566, alpha+beta=0.9950
+Banking: alpha=0.1467, beta=0.7528, alpha+beta=0.8995
+Energy: alpha=0.0746, beta=0.9204, alpha+beta=0.9950
+FMCG: alpha=0.1345, beta=0.8389, alpha+beta=0.9734
+IT: alpha=0.1579, beta=0.0000, alpha+beta=0.1579
+Pharma: alpha=0.0887, beta=0.7675, alpha+beta=0.8562
+HRP Weights: Auto=33.39%, Banking=4.70%, Energy=18.58%, FMCG=16.31%, IT=9.90%, Pharma=17.12%
+
+Rebalancing on 2026-08-18 00:00:00
+
+Fitting GARCH(1,1) models...
+Auto: alpha=0.1320, beta=0.8630, alpha+beta=0.9950
+Banking: alpha=0.1854, beta=0.6923, alpha+beta=0.8778
+Energy: alpha=0.0723, beta=0.9227, alpha+beta=0.9950
+FMCG: alpha=0.1255, beta=0.8679, alpha+beta=0.9934
+IT: alpha=0.1666, beta=0.0597, alpha+beta=0.2263
+Pharma: alpha=0.0000, beta=0.9596, alpha+beta=0.9596
+HRP Weights: Auto=18.39%, Banking=16.85%, Energy=16.28%, FMCG=25.08%, IT=5.65%, Pharma=17.75%
+Completed final HRP+NN backtest.
