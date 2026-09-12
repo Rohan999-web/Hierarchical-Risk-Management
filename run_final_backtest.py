@@ -7,8 +7,9 @@ from modules.returns import compute_stock_returns
 from modules.stock_selector import select_top_eligible_stocks_by_sector
 
 
-def main():
+def run_pipeline():
     universe = pd.read_csv("final_selection_30_per_sector.csv")
+
     risk_returns = {}
     nn_returns = {}
     selections = []
@@ -19,14 +20,21 @@ def main():
             years=14.5,
             refresh_short_cache=False,
         )
+
         selected = select_top_eligible_stocks_by_sector(
-            candidates, prices.columns, stocks_per_sector=15
+            candidates,
+            prices.columns,
+            stocks_per_sector=15,
         )
+
         selections.append(selected)
+
         log_returns, simple_returns = compute_stock_returns(
             prices[selected["Ticker"].tolist()]
         )
+
         nn_performance, _ = run_rolling_nn_backtest(simple_returns)
+
         risk_returns[sector] = log_returns.mean(axis=1)
         nn_returns[sector] = nn_performance["NN_Return"]
 
@@ -39,12 +47,28 @@ def main():
         window=100,
         rebalance_every=20,
     )
+
     performance.to_csv("final_hrp_nn_performance.csv")
     weights.to_csv("final_hrp_nn_weights.csv")
-    pd.Series(calculate_performance_metrics(performance), name="Value").to_csv(
+
+    metrics = calculate_performance_metrics(performance)
+
+    pd.Series(metrics, name="Value").to_csv(
         "final_hrp_nn_metrics.csv"
     )
+
     print("Completed final HRP+NN backtest.")
+
+    return {
+        "performance": performance,
+        "weights": weights,
+        "metrics": metrics,
+        "selected_universe": selected_universe,
+    }
+
+
+def main():
+    run_pipeline()
 
 
 if __name__ == "__main__":
